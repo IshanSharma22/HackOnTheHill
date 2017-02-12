@@ -1,7 +1,5 @@
-# vectorCalculator
-Hello friends!
-Let's make something neat today
+This is a vector calculator website made at Hack on the Hill 2 @ UCLA on Feb 11, 2017. 
 
-UCLA Hack on the Hill, Winter 2017
 
-Our buttons are rad
+My Team Included Allison Lu, Dustin Newman, and Ari Sweedler.
+
