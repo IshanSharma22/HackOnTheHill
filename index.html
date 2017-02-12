@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Vector Calculator</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+<div class="container-fluid" id="container-fluid">
+	<nav class="navbar" id="header">
+		<h1 id="title">&#8893;ector m&#8896;th</h1>
+	</nav>
+	<div id="wrapperButton">
+	<p>Please choose the math you want.</p>
+		<div class="btn-group" role="group">
+			<button type="button" class="btn btn-default" id="addButton">Add</button>
+			<button type="button" class="btn btn-default" id="subButton">Subtract</button>
+			<button type="button" class="btn btn-default" id="scalarMult">Scalar Multiplication</button>
+			<button type="button" class="btn btn-default" id="dotProd">Dot Product</button>
+			<button type="button" class="btn btn-default" id="crossProd">Cross Product</button>
+		</div>
+	</div>
+	<div id="displayArea">
+		<!-- <div id="twoVectors"> -->
+			<div id="vContain">
+				$$\displaystyle \overrightarrow{v} =$$
+				<form class="form-inline">
+				<
+				<input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="numV1">
+				,
+				<input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="numV2">
+				,
+				<input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="numV3">
+				>
+				</form>
+			</div>
+			<div id="optionContain">
+			<div id="wContain">
+				$$\displaystyle \overrightarrow{w} =$$
+				<form class="form-inline">
+				<
+				<input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="numW1">
+				,
+				<input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="numW2">
+				,
+				<input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="numW3">
+				>
+				</form>
+			</div>
+		<!-- </div> -->
+		<!-- <div id="oneScalar"> -->
+			<div id="scalarContain">
+				$$\displaystyle \lambda =$$
+				<form class="form-inline">
+					<input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="scalMult">
+				</form>
+			</div>
+			</div>
+		<!-- </div> -->
+		<div class="btn-group" role="group">
+			<button id="submitButton" type="submit" class="btn btn-default">Submit</button>
+		</div>
+	</div>
+	<div id="outputWrap">
+	<div id="outputArea">
+		<h3>Output: </h3>
+		<div class="resultContain" id="vAddW">
+				$$\displaystyle \overrightarrow{v} + \overrightarrow{w} =$$
+				<span class="textOutput">
+				<
+				<span class="addResult result" id="addResult1"></span>
+				,
+				<span class="addResult result" id="addResult2"></span>
+				,
+				<span class="addResult result" id="addResult3"></span>
+				>
+				</span>
+		</div>
+		<div class="resultContain" id="vSubW">
+				$$\displaystyle \overrightarrow{v} - \overrightarrow{w} =$$
+				<span class="textOutput">
+				<
+				<span class="subResult result" id="subResult1"></span>
+				,
+				<span class="subResult result" id="subResult2"></span>
+				,
+				<span class="subResult result" id="subResult3"></span>
+				>
+				</span>
+		</div>
+		<div class="resultContain" id="scalMultResult">
+				$$\displaystyle \lambda \overrightarrow{v} =$$
+				<span class="textOutput">
+				<
+				<span class="scalMultResult result" id="scalMultResult1"></span>
+				,
+				<span class="scalMultResult result" id="scalMultResult2"></span>
+				,
+				<span class="scalMultResult result" id="scalMultResult3"></span>
+				>
+				</span>
+		</div>
+		<div class="resultContain" id="vDotW">
+				$$\displaystyle \overrightarrow{v} \cdot \overrightarrow{w} =$$
+				<span class="textOutput">
+				<span class="result" id="dotResult1"></span>
+				</span>
+		</div>
+		<div class="resultContain" id="crossProdResult">
+				$$\displaystyle \overrightarrow{v} \times \overrightarrow{w} =$$
+				<span class="textOutput">
+				<
+				<span class="crossResult result" id="crossResult1"></span>
+				,
+				<span class="crossResult result" id="crossResult2"></span>
+				,
+				<span class="crossResult result" id="crossResult3"></span>
+				>
+				</span>
+		</div>
+	</div>
+    </div>
+<div id="footer" class="navbar">
+	<p> Copyright &#169; 2017; Allison Lu, Dustin Newman, Ishan Sharma, Ari Sweedler</p>
+</div>
+</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <script src="script.js"></script>
+  <!-- <script src="vector.js"></script> -->
+
+</body>
+</html>
